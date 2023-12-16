@@ -55,7 +55,7 @@ export default {
         @include flex (
             row, space-around, center
         );
-        margin: 1rem 6rem 0;
+        margin: 1rem 6rem 1rem;
         section.logo img {
             height: 4rem;
         };
@@ -65,13 +65,13 @@ export default {
                 row, center, center
             );
             list-style-type: none;
-        }
+        };
 
         li {
             padding: 0.8rem;
             font-size: 0.6rem;
             text-transform: uppercase;
             font-weight: bolder;
-        }
+        };
     }
 </style>
