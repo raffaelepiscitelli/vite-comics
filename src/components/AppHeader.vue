@@ -49,29 +49,26 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-    @use '../styles/partials/variables' as *;
-    @use '../styles/partials/mixins' as *;
-    .header-container {
-        @include flex (
-            row, space-around, center
-        );
-        margin: 1rem 6rem 1rem;
-        section.logo img {
-            height: 4rem;
-        };
+@use '../styles/partials/variables' as *;
+@use '../styles/partials/mixins' as *;
 
-        ul {
-            @include flex (
-                row, center, center
-            );
-            list-style-type: none;
-        };
+.header-container {
+    @include flex (row, space-around, center);
+    margin: 1rem 6rem 1rem;
 
-        li {
-            padding: 0.8rem;
-            font-size: 0.6rem;
-            text-transform: uppercase;
-            font-weight: bolder;
-        };
-    }
-</style>
+    section.logo img {
+        height: 4rem;
+    };
+
+    ul {
+        @include flex (row, center, center);
+        list-style-type: none;
+    };
+
+    li {
+        padding: 0.8rem;
+        font-size: 0.6rem;
+        text-transform: uppercase;
+        font-weight: bolder;
+    };
+}</style>

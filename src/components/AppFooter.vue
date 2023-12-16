@@ -153,9 +153,9 @@
     export default {
         name: 'AppFooter'
     };
-</script>
+    </script>
 
-<style lang="scss" scoped>
+    <style lang="scss" scoped>
     @use '../styles/partials/variables' as *;
     @use '../styles/partials/mixins' as *;
 
@@ -203,7 +203,10 @@
             div:nth-child(2) {
                 img {
                     height: 25rem;
+                    object-fit: none;
+                    width: 141%;
                     position: relative;
+                    right: 13rem;
                 }
             };
         };
